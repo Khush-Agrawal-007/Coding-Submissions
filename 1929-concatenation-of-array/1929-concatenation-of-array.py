@@ -4,7 +4,4 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        # for i in range(len(nums)):
-        #     nums.append(nums[i])
-        # return nums
-        return nums + nums 
+        return nums+nums      
