@@ -8,3 +8,6 @@ def exchange_seats(seat: pd.DataFrame) -> pd.DataFrame:
         )
     
     return seat
+
+    seat["id"] = seat["id"].apply(lambda x: x - 1 if x % 2 == 0 else x if (x == len(seat)) & (x % 2 == 1) else x + 1)
+    return seat.sort_values("id")
