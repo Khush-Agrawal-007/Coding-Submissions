@@ -1,3 +1,6 @@
+
+# Use Binary Search : its time Complexity is O(log n)
+
 class Solution(object):
     def searchInsert(self, nums, target):
         left = 0
@@ -14,6 +17,7 @@ class Solution(object):
                 right = mid - 1     # search left half
 
         return left  # not found
+
 
             
             
